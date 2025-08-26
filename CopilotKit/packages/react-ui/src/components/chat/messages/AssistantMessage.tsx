@@ -20,12 +20,12 @@ export const AssistantMessage = (props: AssistantMessageProps) => {
   const handleCopy = () => {
     const content = message?.content || "";
     if (content && onCopy) {
-      navigator.clipboard.writeText(content);
+      //navigator.clipboard.writeText(content);
       setCopied(true);
       onCopy(content);
       setTimeout(() => setCopied(false), 2000);
     } else if (content) {
-      navigator.clipboard.writeText(content);
+      //navigator.clipboard.writeText(content);
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     }
